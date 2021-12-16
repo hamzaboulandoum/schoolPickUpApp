@@ -1,0 +1,74 @@
+{
+  "project_info": {
+    "project_number": "616874702273",
+    "project_id": "e-school-bus",
+    "storage_bucket": "e-school-bus.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:616874702273:android:e343db037072b5e3f22b40",
+        "android_client_info": {
+          "package_name": "com.corosol.e_shcool_bus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "616874702273-v7obkakb2k2ti8kcqcurq43eh7ta6017.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDch62XU-PFvDwV-qjS6R3OexgCBwy5m_g"
+        },
+        {
+          "current_key": "AIzaSyCb_6u1CfzwyXrGVDpb4k5VTUWsiMXWRsw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "616874702273-v7obkakb2k2ti8kcqcurq43eh7ta6017.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:616874702273:android:8b5c5d63c4c5062af22b40",
+        "android_client_info": {
+          "package_name": "com.example.e_school_bus_admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "616874702273-v7obkakb2k2ti8kcqcurq43eh7ta6017.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDch62XU-PFvDwV-qjS6R3OexgCBwy5m_g"
+        },
+        {
+          "current_key": "AIzaSyCb_6u1CfzwyXrGVDpb4k5VTUWsiMXWRsw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "616874702273-v7obkakb2k2ti8kcqcurq43eh7ta6017.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
