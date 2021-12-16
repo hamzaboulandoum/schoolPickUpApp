@@ -2,6 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:e_school_bus_admin/Screens/chat_page.dart';
 import 'package:e_school_bus_admin/Screens/map_page.dart';
 import 'package:e_school_bus_admin/Screens/notifications.dart';
+import 'package:e_school_bus_admin/optimization/map_page.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'dart:ui';
@@ -35,7 +36,8 @@ class _HomePageState extends State<HomePage> {
   //Pages Variables
   final screens = [
     const Notifications(),
-    MapScreen(),
+    //MapScreen(),
+    MapPage(),
     //const MapTemporary(),
     const chatPage(),
   ];

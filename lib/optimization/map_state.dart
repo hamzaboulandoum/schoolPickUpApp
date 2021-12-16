@@ -12,8 +12,6 @@ class MapState extends StatefulWidget {
   _MyAppState createState() => _MyAppState();
 }
 
-
-
 class _MyAppState extends State<MapState> {
   Map<MarkerId, Marker> markers = {};
 
@@ -29,7 +27,7 @@ class _MyAppState extends State<MapState> {
   @override
   void initState() {
     /// add origin marker origin marker
-    
+
     var route = widget.route;
     for (var item in route.sequence) {
       _addMarker(
@@ -49,26 +47,29 @@ class _MyAppState extends State<MapState> {
         alignment: Alignment.center,
         children: [
           GoogleMap(
-          mapType: MapType.normal,
-          initialCameraPosition: _kGooglePlex,
-          myLocationEnabled: true,
-          tiltGesturesEnabled: true,
-          compassEnabled: true,
-          scrollGesturesEnabled: true,
-          zoomGesturesEnabled: true,
-          polylines: Set<Polyline>.of(polylines.values),
-          markers: Set<Marker>.of(markers.values),
-          onMapCreated: (GoogleMapController controller) {
-            _controller.complete(controller);
-          },
-        ),
-        Positioned(top : 20,child: Container(
-          child: Text("Distance : ${widget.route.length.toStringAsFixed(2)} km  Durée : ${((widget.route.length/14)*60).toStringAsFixed(2)} mins"),
-          color :Colors.white,
-          padding: const EdgeInsets.all(8),
+            mapType: MapType.normal,
+            initialCameraPosition: _kGooglePlex,
+            myLocationEnabled: true,
+            tiltGesturesEnabled: true,
+            compassEnabled: true,
+            scrollGesturesEnabled: true,
+            zoomGesturesEnabled: true,
+            polylines: Set<Polyline>.of(polylines.values),
+            markers: Set<Marker>.of(markers.values),
+            onMapCreated: (GoogleMapController controller) {
+              _controller.complete(controller);
+            },
           ),
-        ),
-        ]
+          Positioned(
+            top: 20,
+            child: Container(
+              child: Text(
+                  "Distance : ${widget.route.length.toStringAsFixed(2)} km  Durée : ${((widget.route.length / 14) * 60).toStringAsFixed(2)} mins"),
+              color: Colors.white,
+              padding: const EdgeInsets.all(8),
+            ),
+          ),
+        ],
       ),
     );
   }

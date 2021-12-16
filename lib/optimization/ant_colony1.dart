@@ -46,7 +46,6 @@ int random(Map<int, num> x) {
   var options = x.keys.toList();
   var weights = x.values.toList();
   int n = options.length;
-  var l = [];
   num r = Random().nextDouble();
   num s = 0;
   for (int i = 0; i < n; i++) {

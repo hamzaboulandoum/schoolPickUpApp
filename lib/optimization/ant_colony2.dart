@@ -4,6 +4,7 @@ import 'custom_classes.dart';
 
 Route antColony2(Graph g) {
   Route bestRoute = generateRoute(g, bus);
+  // ignore: avoid_print
   print(bestRoute.length);
   double f;
   int c = 0;
